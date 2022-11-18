@@ -11,6 +11,32 @@
             "name": "Java",
             "description": "Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
             "founded": "1995"
+        },
+        {
+            "id": 3,
+            "name": "Python",
+            "description": "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.",
+            "founded": "1991"
+        },
+        {
+            "id": 4,
+            "name": "C++",
+            "description": "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or \"C with Classes\".",
+            "founded": "1985"
+        }
+    ],
+    "Functional": [
+        {
+            "id": 0,
+            "name": "Haskell",
+            "description": "Haskell is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing.",
+            "founded": "1990"
+        },
+        {
+            "id": 1,
+            "name": "Erlang",
+            "description": "Erlang is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
+            "founded": "1986"
         }
     ]
-  }
+}

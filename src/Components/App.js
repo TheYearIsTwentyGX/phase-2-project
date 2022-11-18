@@ -5,29 +5,27 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import LangList from './LangList';
 
 function App() {
+  const [langs, setLangs] = useState([]);
+  const [langType, setLangType] = useState('');
 
-  let test = [
-    {name: "Python"},
-    {name: "Java"},
-    {name: "C++"},
-    {name: "C#"},
-    {name: "JavaScript"},
-    {name: "Ruby"},
-    {name: "PHP"},
-    {name: "Swift"},
-    {name: "Go"},
-    {name: "Rust"},
-    //{name: "Kotlin"},
-    {name: "Scala"}
-  ];
+  function changeLangType(newLangType) {
+    if (newLangType.toLowerCase() === 'oop' || newLangType.toLowerCase() === 'functional') {
+      setLangType(newLangType);
+    }
+  }
+
+  useEffect(() => {
+    fetch(`http://localhost:8080/${langType.toString()}`)
+      .then(res => res.json())
+      .then(setLangs);
+  }, [langType]);
+
+  
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Route path="/OOP">
-        <LangList Langs={test}></LangList>
-      </Route>
-      <Route path="/functional">
-        <LangList Langs={test.slice(0, 5)}></LangList>
+      <Navbar handleNavClick={changeLangType}></Navbar>
+      <Route path="/:langType">
+        <LangList Langs={langs}></LangList>
       </Route>
     </div>
   );

@@ -3,9 +3,8 @@ import LangCard from "./LangCard";
 import { useProps } from "react-dom";
 import "../LangList.css";
 
-function LangList({ Langs }) {
+function LangList({ Langs, LangType }) {
     let langRows = [];
-    console.log(Langs.length);
     for (let i = 0; i < Langs.length; i++) {
         if (i + 2 < Langs.length) {
             langRows.push(Langs.slice(i, i + 3));
