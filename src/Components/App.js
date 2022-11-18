@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import '../App.css';
 import Navbar from './Navbar';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import LangList from './LangList';
 
 function App() {
@@ -22,7 +23,12 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <LangList Langs={test}></LangList>
+      <Route path="/OOP">
+        <LangList Langs={test}></LangList>
+      </Route>
+      <Route path="/functional">
+        <LangList Langs={test.slice(0, 5)}></LangList>
+      </Route>
     </div>
   );
 }

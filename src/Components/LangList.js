@@ -1,5 +1,6 @@
 import React from "react";
 import LangCard from "./LangCard";
+import { useProps } from "react-dom";
 import "../LangList.css";
 
 function LangList({ Langs }) {
