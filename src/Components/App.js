@@ -1,17 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import '../Style/App.css';
 import Navbar from './Navbar';
-import {Route, useRouteMatch, useParams, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import LangList from './LangList';
 import LangDetails from './LangDetails';
 import NewLangForm from './NewLangForm';
 
 function App() {
-  const params = useParams();
   const [langs, setLangs] = useState([]);
   const [langType, setLangType] = useState('');
   const [langId, setLangId] = useState(1);
-  const match = useRouteMatch();
 
   function changeLangType(newLangType) {
     if (newLangType.toLowerCase() === 'oop' || newLangType.toLowerCase() === 'functional') {
