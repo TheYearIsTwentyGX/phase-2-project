@@ -25,7 +25,14 @@ function App() {
   }
 
   function addLang(newLang, newLangType) {
-    
+    fetch(`http://localhost:8080/${newLangType}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newLang)
+      });
+    setLangs([...langs, newLang]);
   }
 
   useEffect(() => {
