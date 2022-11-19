@@ -37,6 +37,30 @@
             "name": "Erlang",
             "description": "Erlang is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
             "founded": "1986"
+        },
+        {
+            "id": 2,
+            "name": "F#",
+            "description": "F# is a multi-paradigm programming language, encompassing functional, object-oriented and imperative programming disciplines.",
+            "founded": "2005"
+        },
+        {
+            "id": 3,
+            "name": "Clojure",
+            "description": "Clojure is a dialect of the Lisp programming language, and is a general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.",
+            "founded": "2007"
+        },
+        {
+            "id": 4,
+            "name": "Scala",
+            "description": "Scala is a general-purpose programming language providing support for functional programming and a strong static type system.",
+            "founded": "2003"
+        },
+        {
+            "id": 5,
+            "name": "OCaml",
+            "description": "OCaml is an industrial-strength programming language supporting functional, imperative and object-oriented styles.",
+            "founded": "1996"
         }
     ]
 }

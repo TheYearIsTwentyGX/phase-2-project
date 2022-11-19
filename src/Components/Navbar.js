@@ -12,8 +12,9 @@ function Navbar({handleNavClick}) {
     return (
         <div className="Navbar">
         <h1 style={{color:'white'}}>Language Wiki</h1>
-        <div>
+        <div className='nav'>
             <NavLink className="NavLink" onClick={onNavClick} to="/OOP">Object-Oriented Languages</NavLink>
+            <NavLink className="NavLink" onClick={onNavClick} to="/AddLanguage">Add a Language</NavLink>
             <NavLink className="NavLink" onClick={onNavClick} to="/Functional">Functional Languages</NavLink>
         </div>
         </div>

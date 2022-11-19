@@ -5,7 +5,7 @@
     display: grid;
     padding-top: 50px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto-fill, 400px);
+    grid-template-rows: repeat(auto-fill, 225px);
     grid-gap: 5px;
-    justify-items:left;
+    justify-items:baseline;
 }

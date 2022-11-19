@@ -9,7 +9,13 @@
     padding: 0.5rem 1rem;
     border-radius: 20px;
 }
-div:has(> .NavLink) {
-    justify-content: space-evenly;
-    display: flex;
+
+.nav {
+    padding-left:20%;
+    padding-right:20%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    justify-items: center;
 }
