@@ -4,63 +4,123 @@
             "id": 1,
             "name": "C#",
             "description": "C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.",
-            "founded": "2000"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/1200px-C_Sharp_wordmark.svg.png",
+            "founded": "2000",
+            "initialVersion": "1.0",
+            "creator": "Anders Hejlsberg",
+            "company": "Microsoft",
+            "latestRelease": "C# 8.0",
+            "latestReleaseDate": "2019-08-21"
         },
         {
             "id": 2,
             "name": "Java",
             "description": "Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
-            "founded": "1995"
+            "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+            "founded": "1995",
+            "initialVersion": "1.0",
+            "creator": "James Gosling",
+            "company": "Oracle",
+            "latestRelease": "Java 13",
+            "latestReleaseDate": "2019-09-17"
         },
         {
             "id": 3,
             "name": "Python",
             "description": "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.",
-            "founded": "1991"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png",
+            "founded": "1991",
+            "initialVersion": "0.9.0",
+            "creator": "Guido van Rossum",
+            "company": "Python Software Foundation",
+            "latestRelease": "Python 3.8.0",
+            "latestReleaseDate": "2019-10-14"
         },
         {
             "id": 4,
             "name": "C++",
             "description": "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or \"C with Classes\".",
-            "founded": "1985"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
+            "founded": "1985",
+            "initialVersion": "1.0",
+            "creator": "Bjarne Stroustrup",
+            "company": "ISO",
+            "latestRelease": "C++20",
+            "latestReleaseDate": "2019-12-23"
         }
     ],
     "Functional": [
         {
-            "id": 0,
+            "id": 1,
             "name": "Haskell",
             "description": "Haskell is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing.",
-            "founded": "1990"
-        },
-        {
-            "id": 1,
-            "name": "Erlang",
-            "description": "Erlang is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
-            "founded": "1986"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Haskell-Logo.svg/1200px-Haskell-Logo.svg.png",
+            "founded": "1990",
+            "initialVersion": "1.0",
+            "creator": "Simon Peyton Jones",
+            "company": "Haskell.org",
+            "latestRelease": "Haskell 2010",
+            "latestReleaseDate": "2010-12-22"
         },
         {
             "id": 2,
-            "name": "F#",
-            "description": "F# is a multi-paradigm programming language, encompassing functional, object-oriented and imperative programming disciplines.",
-            "founded": "2005"
+            "name": "Erlang",
+            "description": "Erlang is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Erlang_logo.svg/1024px-Erlang_logo.svg.png",
+            "founded": "1986",
+            "initialVersion": "1.0",
+            "creator": "Joe Armstrong",
+            "company": "Ericsson",
+            "latestRelease": "Erlang/OTP 22",
+            "latestReleaseDate": "2019-09-04"
         },
         {
             "id": 3,
-            "name": "Clojure",
-            "description": "Clojure is a dialect of the Lisp programming language, and is a general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.",
-            "founded": "2007"
+            "name": "F#",
+            "description": "F# is a multi-paradigm programming language, encompassing functional, object-oriented and imperative programming disciplines.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/F_Sharp_logo.svg/1024px-F_Sharp_logo.svg.png",
+            "founded": "2005",
+            "initialVersion": "1.0",
+            "creator": "Don Syme",
+            "company": "Microsoft",
+            "latestRelease": "F# 4.7",
+            "latestReleaseDate": "2019-08-21"
         },
         {
             "id": 4,
-            "name": "Scala",
-            "description": "Scala is a general-purpose programming language providing support for functional programming and a strong static type system.",
-            "founded": "2003"
+            "name": "Clojure",
+            "description": "Clojure is a dialect of the Lisp programming language, and is a general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/1024px-Clojure_logo.svg.png",
+            "founded": "2007",
+            "initialVersion": "1.0",
+            "creator": "Rich Hickey",
+            "company": "Clojure Software",
+            "latestRelease": "Clojure 1.10.1",
+            "latestReleaseDate": "2019-10-17"
         },
         {
             "id": 5,
+            "name": "Scala",
+            "description": "Scala is a general-purpose programming language providing support for functional programming and a strong static type system.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/1920px-Scala-full-color.svg.png",
+            "founded": "2003",
+            "initialVersion": "1.0",
+            "creator": "Martin Odersky",
+            "company": "EPFL",
+            "latestRelease": "Scala 2.13.1",
+            "latestReleaseDate": "2019-10-17"
+        },
+        {
+            "id": 6,
             "name": "OCaml",
             "description": "OCaml is an industrial-strength programming language supporting functional, imperative and object-oriented styles.",
-            "founded": "1996"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/OCaml_Logo.svg/1920px-OCaml_Logo.svg.png",
+            "founded": "1996",
+            "initialVersion": "1.0",
+            "creator": "Xavier Leroy",
+            "company": "INRIA",
+            "latestRelease": "OCaml 4.10.0",
+            "latestReleaseDate": "2019-10-17"
         }
     ]
 }

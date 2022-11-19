@@ -1,0 +1,26 @@
+img {
+    max-height: 300px;
+    max-width: 100%;
+}
+.DetailsContent {
+    background-color: #15191F;
+    margin:0;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 40px;
+    justify-items: left;
+    align-items: center;
+}
+
+.DetailGroup {
+    position: relative;
+    background-color: #232F3E;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    height: fit-content;
+}

@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import '../Style/App.css';
 import Navbar from './Navbar';
-import {Route, useRouteMatch, Switch} from 'react-router-dom';
+import {Route, useRouteMatch, useParams, Switch} from 'react-router-dom';
 import LangList from './LangList';
 import LangDetails from './LangDetails';
 
 function App() {
+  const params = useParams();
   const [langs, setLangs] = useState([]);
-  const [langType, setLangType] = useState('OOP');
+  const [langType, setLangType] = useState('');
   const [langId, setLangId] = useState(1);
   const match = useRouteMatch();
 
@@ -36,7 +37,7 @@ function App() {
             <LangList viewDetails={viewLangDetails} Langs={langs}></LangList>
           </Route>
           <Route exact path={`/:langType/:langId`}>
-            <LangDetails props={langs[langId]}></LangDetails>
+            <LangDetails props={langs[langId - 1]}></LangDetails>
           </Route>
         </Switch>
       </Route>
