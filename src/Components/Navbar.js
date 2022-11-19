@@ -5,7 +5,6 @@ import '../Style/Navbar.css';
 function Navbar({handleNavClick}) {
 
     function onNavClick(e) {
-        
         handleNavClick(e.target.href.split('/').at(-1));
     }
 
