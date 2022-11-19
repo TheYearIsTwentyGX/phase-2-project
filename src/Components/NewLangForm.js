@@ -3,7 +3,7 @@ import react from 'react';
 function NewLangForm({ addLang }) {
     function handleSubmit(e) {
         e.preventDefault();
-        const { name, 
+        const output = Array.from(() => {const { name, 
             image, 
             initialVersion, 
             founded, 
@@ -11,7 +11,8 @@ function NewLangForm({ addLang }) {
             latestReleaseDate, 
             creator, 
             company, 
-            description } = e.target.elements;
+            description } = e.target.elements });
+        console.log(output);
         addLang();
         e.target.reset();
     }
