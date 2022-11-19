@@ -1,6 +1,13 @@
 import react from 'react';
 
-function NewLangForm(props) {
+function NewLangForm({ addLang }) {
+    function handleSubmit(e) {
+        e.preventDefault();
+        const { lang, level } = e.target.elements;
+        addLang();
+        e.target.reset();
+    }
+
     return (
         <form>
             <input type="text" placeholder="Language" />
