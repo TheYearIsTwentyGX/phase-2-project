@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import '../Style/App.css';
 import Navbar from './Navbar';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, useHistory} from 'react-router-dom';
 import LangList from './LangList';
 import LangDetails from './LangDetails';
 import NewLangForm from './NewLangForm';
 
 function App() {
+  const history = useHistory();
   const [langs, setLangs] = useState([]);
   const [langType, setLangType] = useState('');
   const [langId, setLangId] = useState(1);
@@ -23,13 +24,14 @@ function App() {
   }
 
   function addLang(newLang, newLangType) {
+    let newId = '';
     fetch(`http://localhost:8080/${newLangType}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
         },
         body: JSON.stringify(newLang)
-      });
+      }).then(response => response.json()).then(data => history.push(`/${newLangType}/${data.id}`));
     setLangs([...langs, newLang]);
   }
 
