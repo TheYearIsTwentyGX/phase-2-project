@@ -1,0 +1,33 @@
+.NewLangForm, form {
+    background-color: black;
+    padding-top: 20px;
+}
+
+select {
+    font-size: 20px;
+}
+
+.textFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.textFields > div {
+    position: relative;
+    background-color: #232F3E;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    height: fit-content;
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+}
