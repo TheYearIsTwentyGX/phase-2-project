@@ -1,4 +1,3 @@
-import react from 'react';
 import "../Style/NewLangForm.css";
 function NewLangForm({ addLang }) {
     function randomNumber() {

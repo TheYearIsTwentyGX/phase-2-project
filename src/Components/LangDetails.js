@@ -1,4 +1,3 @@
-import react from "react";
 import "../Style/LangDetails.css";
 
 function LangDetails({props}) {
