@@ -31,8 +31,7 @@ function App() {
         'Content-Type': 'application/json'
         },
         body: JSON.stringify(newLang)
-      }).then(response => response.json()).then(data => history.push(`/${newLangType}/${data.id}`));
-    setLangs([...langs, newLang]);
+      }).then(response => response.json()).then(newLang => {setLangs([...langs, newLang]); return newLang;}).then(newLang => history.push(`/${newLangType}/${newLang.id}`));
   }
 
   useEffect(() => {

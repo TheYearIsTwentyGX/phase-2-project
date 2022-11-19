@@ -4,12 +4,13 @@
     background-color: #15191F;
     display: grid;
     padding-top: 50px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 24%);
     grid-template-rows: repeat(auto-fill, 225px);
-    grid-gap: 5px;
-    justify-items:baseline;
+    grid-gap: 1%;
+    justify-items: center;
 }
 
 .langCard {
     position: relative;
+    width: 100%;
 }
