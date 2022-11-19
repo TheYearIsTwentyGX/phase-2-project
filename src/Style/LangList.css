@@ -2,7 +2,10 @@
     width: 100%;
     height: 100vh;
     background-color: #15191F;
-}
-.LangTable {
-    width: 100%;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, 400px);
+    grid-gap: 5px;
+    justify-items:left;
 }
