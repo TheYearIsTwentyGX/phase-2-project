@@ -51,10 +51,10 @@ function App() {
           <Route path={"/AddLanguage"}>
             <NewLangForm addLang={addLang}></NewLangForm>
           </Route>
-          <Route path={`/:langType`}>
+          <Route exact path={`/:langType`}>
             <LangList viewDetails={viewLangDetails} Langs={langs}></LangList>
           </Route>
-          <Route path={`/:langType/:langId`}>
+          <Route exact path={`/:langType/:langId`}>
             <LangDetails props={langs[langId - 1]}></LangDetails>
           </Route>
         </Switch>

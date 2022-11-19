@@ -5,7 +5,7 @@ import "../Style/LangList.css";
 
 function LangList({ Langs, viewDetails }) {
     function randomNumber() {
-        return Math.floor(Math.random() * 40) - 20;
+        return Math.floor(Math.random() * 30) - 15;
     }
 
     let langRows = [];

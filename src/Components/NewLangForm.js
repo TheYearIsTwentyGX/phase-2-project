@@ -41,7 +41,7 @@ function NewLangForm({ addLang }) {
                 <div style={{top:`${randomNumber()}px`, left:`${(randomNumber()*2)}px`}}>
                     <input name='name' type="text" placeholder="Language Name" />
                     <input name='image' type="text" placeholder="Link to Lanuage Logo" />
-                    <textarea onInput={checkForResize} name='description' type="text" placeholder="Description" />
+                    <textarea onInput={checkForResize} name='description' type="text" placeholder="Language Description" />
                 </div>
                 <div style={{top:`${randomNumber()}px`, left:`${(randomNumber()*2)}px`}}>
                     <input name='initialVersion' type="text" placeholder="Initial Version" />
