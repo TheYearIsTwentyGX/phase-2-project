@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import '../App.css';
+import '../Style/App.css';
 import Navbar from './Navbar';
 import {Route, useParams} from 'react-router-dom';
 import LangList from './LangList';

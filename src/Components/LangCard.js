@@ -1,5 +1,5 @@
 import React from "react";
-import "../LangCard.css";
+import "../Style/LangCard.css";
 
 function LangCard({props}) {
     return (

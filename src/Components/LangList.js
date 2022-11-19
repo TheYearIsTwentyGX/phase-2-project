@@ -1,7 +1,7 @@
 import React from "react";
 import LangCard from "./LangCard";
 import { useParams } from "react-router-dom";
-import "../LangList.css";
+import "../Style/LangList.css";
 
 function LangList({ Langs, LangType }) {
     let langRows = [];
