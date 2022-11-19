@@ -3,7 +3,7 @@ import "../Style/LangDetails.css";
 
 function LangDetails({props}) {
     function randomNumber() {
-        return Math.floor(Math.random() * 20) - 10;
+        return Math.floor(Math.random() * 40) - 20;
     }
     return (
         <div className="LangDetails">
@@ -20,10 +20,10 @@ function LangDetails({props}) {
                     <h3>{props.company}</h3>
                 </div>
                 <div className="DetailGroup" style={{top:`${randomNumber()}px`, left:`${randomNumber()}px`}}>
-                    <h2>First Released:</h2>
-                    <h3>{props.founded}</h3>
                     <h2>Initial Version:</h2>
                     <h3>{props.initialVersion}</h3>
+                    <h2>Initial Release:</h2>
+                    <h3>{props.founded}</h3>
                 </div>
                 <div className="DetailGroup" style={{top:`${randomNumber()}px`, left:`${randomNumber()}px`}}>
                     <h2>Latest Version:</h2>

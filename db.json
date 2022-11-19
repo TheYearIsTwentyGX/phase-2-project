@@ -10,7 +10,7 @@
             "creator": "Anders Hejlsberg",
             "company": "Microsoft",
             "latestRelease": "C# 8.0",
-            "latestReleaseDate": "2019-08-21"
+            "latestReleaseDate": "2021"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@
             "creator": "James Gosling",
             "company": "Oracle",
             "latestRelease": "Java 13",
-            "latestReleaseDate": "2019-09-17"
+            "latestReleaseDate": "2022"
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             "creator": "Guido van Rossum",
             "company": "Python Software Foundation",
             "latestRelease": "Python 3.8.0",
-            "latestReleaseDate": "2019-10-14"
+            "latestReleaseDate": "2022"
         },
         {
             "id": 4,
@@ -46,7 +46,43 @@
             "creator": "Bjarne Stroustrup",
             "company": "ISO",
             "latestRelease": "C++20",
-            "latestReleaseDate": "2019-12-23"
+            "latestReleaseDate": "2020"
+        },
+        {
+            "id": 5,
+            "name": "JavaScript",
+            "description": "JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+            "founded": "1995",
+            "initialVersion": "1.0",
+            "creator": "Brendan Eich",
+            "company": "ECMA",
+            "latestRelease": "ECMAScript 2019",
+            "latestReleaseDate": "2021"
+        },
+        {
+            "id": 6,
+            "name": "PHP",
+            "description": "PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP is now installed on more than 244 million websites and 2.1 million web servers.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png",
+            "founded": "1995",
+            "initialVersion": "1.0",
+            "creator": "Rasmus Lerdorf",
+            "company": "PHP Group",
+            "latestRelease": "PHP 7.3.11",
+            "latestReleaseDate": "2022"
+        },
+        {
+            "id": 7,
+            "name": "Ruby",
+            "description": "Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro \"Matz\" Matsumoto in Japan.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1200px-Ruby_logo.svg.png",
+            "founded": "1995",
+            "initialVersion": "0.95",
+            "creator": "Yukihiro Matsumoto",
+            "company": "Ruby Association",
+            "latestRelease": "Ruby 2.6.5",
+            "latestReleaseDate": "2022"
         }
     ],
     "Functional": [
@@ -60,7 +96,7 @@
             "creator": "Simon Peyton Jones",
             "company": "Haskell.org",
             "latestRelease": "Haskell 2010",
-            "latestReleaseDate": "2010-12-22"
+            "latestReleaseDate": "2010"
         },
         {
             "id": 2,
@@ -72,7 +108,7 @@
             "creator": "Joe Armstrong",
             "company": "Ericsson",
             "latestRelease": "Erlang/OTP 22",
-            "latestReleaseDate": "2019-09-04"
+            "latestReleaseDate": "2022"
         },
         {
             "id": 3,
@@ -84,7 +120,7 @@
             "creator": "Don Syme",
             "company": "Microsoft",
             "latestRelease": "F# 4.7",
-            "latestReleaseDate": "2019-08-21"
+            "latestReleaseDate": "2022"
         },
         {
             "id": 4,
@@ -96,7 +132,7 @@
             "creator": "Rich Hickey",
             "company": "Clojure Software",
             "latestRelease": "Clojure 1.10.1",
-            "latestReleaseDate": "2019-10-17"
+            "latestReleaseDate": "2022"
         },
         {
             "id": 5,
@@ -108,7 +144,7 @@
             "creator": "Martin Odersky",
             "company": "EPFL",
             "latestRelease": "Scala 2.13.1",
-            "latestReleaseDate": "2019-10-17"
+            "latestReleaseDate": "2022"
         },
         {
             "id": 6,
@@ -120,7 +156,7 @@
             "creator": "Xavier Leroy",
             "company": "INRIA",
             "latestRelease": "OCaml 4.10.0",
-            "latestReleaseDate": "2019-10-17"
+            "latestReleaseDate": "2022"
         }
     ]
 }
