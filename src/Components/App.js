@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import '../App.css';
 import Navbar from './Navbar';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Route, useParams} from 'react-router-dom';
 import LangList from './LangList';
 
 function App() {
   const [langs, setLangs] = useState([]);
-  const [langType, setLangType] = useState('');
+  const [langType, setLangType] = useState('OOP');
 
   function changeLangType(newLangType) {
     if (newLangType.toLowerCase() === 'oop' || newLangType.toLowerCase() === 'functional') {

@@ -1,6 +1,6 @@
 import React from "react";
 import LangCard from "./LangCard";
-import { useProps } from "react-dom";
+import { useParams } from "react-router-dom";
 import "../LangList.css";
 
 function LangList({ Langs, LangType }) {
@@ -15,14 +15,16 @@ function LangList({ Langs, LangType }) {
     }
 
     return (
-        <table className="LangList">
+        <div className="LangList">
+        <table className="LangTable">
             <tbody>
                 {langRows.map(row =>
                 (<tr>
                     {row.map(lang => <td><LangCard key={lang.name} props={lang}></LangCard></td>)}
                 </tr>))}
             </tbody>
-        </table>);
+        </table>
+        </div>);
 }
 
 export default LangList;

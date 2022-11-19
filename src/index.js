@@ -6,6 +6,7 @@ import {BrowserRouter} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+window.React1 = require('react');
 root.render(
     <BrowserRouter>
     <App />

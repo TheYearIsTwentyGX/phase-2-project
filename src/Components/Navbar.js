@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink } from 'react-router-dom';
+import '../Navbar.css';
 
 function Navbar({handleNavClick}) {
 
@@ -10,13 +11,11 @@ function Navbar({handleNavClick}) {
 
     return (
         <div className="Navbar">
-        <h1>Navbar</h1>
-            <div>
-                <NavLink onClick={onNavClick} to="/OOP">Object-Oriented Languages</NavLink>
-            </div>
-            <div>
-                <NavLink onClick={onNavClick} to="/Functional">Functional Languages</NavLink>
-            </div>
+        <h1 style={{color:'white'}}>Language Wiki</h1>
+        <div>
+            <NavLink className="NavLink" onClick={onNavClick} to="/OOP">Object-Oriented Languages</NavLink>
+            <NavLink className="NavLink" onClick={onNavClick} to="/Functional">Functional Languages</NavLink>
+        </div>
         </div>
     );
 }
