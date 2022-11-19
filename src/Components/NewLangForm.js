@@ -18,6 +18,12 @@ function NewLangForm({ addLang }) {
         //addLang(newLang, languageType);
         //e.target.reset();
     }
+    function checkForResize(e) {
+        if (e.target.value.length > 0) {
+            e.target.style.height = 'auto';
+            e.target.style.height = (e.target.scrollHeight) + 'px';
+        }
+    }
 
     return (
         <div className="NewLangForm">
@@ -32,7 +38,7 @@ function NewLangForm({ addLang }) {
                 <div>
                     <input name='name' type="text" placeholder="Language Name" />
                     <input name='image' type="text" placeholder="Link to Lanuage Logo" />
-                    <textarea name='description' type="text" placeholder="Description" />
+                    <textarea onInput={checkForResize} name='description' type="text" placeholder="Description" />
                 </div>
                 <div>
                     <input name='initialVersion' type="text" placeholder="Initial Version" />
