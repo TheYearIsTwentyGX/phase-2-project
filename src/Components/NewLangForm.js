@@ -15,7 +15,7 @@ function NewLangForm({ addLang }) {
             }
         }
         console.log(languageType);
-        //addLang();
+        addLang(newLang, languageType);
         //e.target.reset();
     }
 

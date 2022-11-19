@@ -24,6 +24,10 @@ function App() {
     setLangId(newLangId);
   }
 
+  function addLang(newLang, newLangType) {
+    
+  }
+
   useEffect(() => {
     if (langType != '')
     fetch(`http://localhost:8080/${langType.toString()}`)
@@ -38,7 +42,7 @@ function App() {
       <Route path="/">
         <Switch>
           <Route path={"/AddLanguage"}>
-            <NewLangForm></NewLangForm>
+            <NewLangForm addLang={addLang}></NewLangForm>
           </Route>
           <Route path={`/:langType`}>
             <LangList viewDetails={viewLangDetails} Langs={langs}></LangList>
