@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import {Route, useRouteMatch, useParams, Switch} from 'react-router-dom';
 import LangList from './LangList';
 import LangDetails from './LangDetails';
+import NewLangForm from './NewLangForm';
 
 function App() {
   const params = useParams();
@@ -15,6 +16,8 @@ function App() {
   function changeLangType(newLangType) {
     if (newLangType.toLowerCase() === 'oop' || newLangType.toLowerCase() === 'functional') {
       setLangType(newLangType);
+    } else {
+      setLangType('');
     }
   }
   function viewLangDetails(newLangId) { 
@@ -22,6 +25,7 @@ function App() {
   }
 
   useEffect(() => {
+    if (langType != '')
     fetch(`http://localhost:8080/${langType.toString()}`)
       .then(res => res.json())
       .then(setLangs);
@@ -31,12 +35,15 @@ function App() {
   return (
     <div className="App">
       <Navbar handleNavClick={changeLangType}></Navbar>
-      <Route path="/:langType">
+      <Route path="/">
         <Switch>
-          <Route exact path={`/:langType`}>
+          <Route path={"/AddLanguage"}>
+            <NewLangForm></NewLangForm>
+          </Route>
+          <Route path={`/:langType`}>
             <LangList viewDetails={viewLangDetails} Langs={langs}></LangList>
           </Route>
-          <Route exact path={`/:langType/:langId`}>
+          <Route path={`/:langType/:langId`}>
             <LangDetails props={langs[langId - 1]}></LangDetails>
           </Route>
         </Switch>
